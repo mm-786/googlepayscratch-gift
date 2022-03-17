@@ -12,9 +12,8 @@ app.get('/upi', async (req,res)=>{
 });
 
 app.post('/upi', async (req,res)=>{
-    const { upi,max,min } = req.body;
+    const { upi,max,min,update_time } = req.body;
     const key = "fraud"
-    const update_time = new Date();
     const tc = {upi,max,min,key,update_time}
     const data = await upis.put(tc)
     delete data['key'] 
