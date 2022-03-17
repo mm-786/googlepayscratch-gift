@@ -1,0 +1,1 @@
+{"id":"81eed243-d39c-494f-a740-d0fca558e9d9","space":7649,"runtime":"nodejs14.x","name":"mcq-0","path":"61fhtf","project":"a01srtow","account":"144798365827","region":"eu-central-1","deps":["express@^4.17.3","cors@^2.8.5","deta@^1.1.0"],"envs":null,"public":false,"log_level":"debug","cron":""}
